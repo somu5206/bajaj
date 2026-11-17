@@ -1,0 +1,1013 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102c68">
+<title>Purna Pushkala Motors | Bajaj Auto Lingasugur</title>
+<meta name="description" content="Explore Bajaj commercial vehicles at Purna Pushkala Motors, Lingasugur. Contact us for vehicle enquiries, finance information and showroom directions.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --blue: #102c68;
+  --dark: #08162e;
+  --red: #e32932;
+  --light: #f5f7fb;
+  --text: #19243a;
+  --muted: #64748b;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior:smooth; }
+
+body {
+  font-family:'Inter',sans-serif;
+  color:var(--text);
+  background:white;
+  overflow-x:hidden;
+}
+
+a { text-decoration:none; color:inherit; }
+button { font:inherit; cursor:pointer; }
+
+.container {
+  width:min(1180px,90%);
+  margin:auto;
+}
+
+.topbar {
+  background:var(--dark);
+  color:white;
+  padding:10px 0;
+  font-size:12px;
+}
+
+.topbar .container {
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+header {
+  background:white;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 3px 20px #0000000b;
+}
+
+.nav {
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-icon {
+  width:48px;
+  height:48px;
+  background:var(--blue);
+  color:white;
+  display:grid;
+  place-items:center;
+  font-size:24px;
+  font-weight:900;
+  border-radius:10px;
+}
+
+.logo h2 {
+  color:var(--blue);
+  font-size:19px;
+  font-weight:900;
+}
+
+.logo p {
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--muted);
+  margin-top:4px;
+}
+
+.navlinks {
+  display:flex;
+  align-items:center;
+  gap:28px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.navlinks a:hover { color:var(--red); }
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:14px 23px;
+  border-radius:5px;
+  border:0;
+  font-size:13px;
+  font-weight:700;
+  transition:.25s;
+}
+
+.btn-red {
+  background:var(--red);
+  color:white;
+}
+
+.btn-red:hover {
+  background:#bb1824;
+  transform:translateY(-2px);
+}
+
+.btn-outline {
+  border:1px solid #ffffff90;
+  color:white;
+}
+
+.menu-toggle {
+  display:none;
+  background:none;
+  border:0;
+  font-size:26px;
+  color:var(--blue);
+}
+
+.hero {
+  min-height:610px;
+  display:flex;
+  align-items:center;
+  position:relative;
+  background:
+    linear-gradient(90deg,#07152ef2 0%,#07152edb 43%,#07152e35 100%),
+    url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=1800') center/cover;
+  color:white;
+}
+
+.hero-content { max-width:650px; padding:95px 0; }
+
+.tag {
+  color:#ff6b70;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:22px;
+}
+
+.hero h1 {
+  font-size:clamp(40px,6vw,70px);
+  line-height:1.08;
+  font-weight:900;
+  letter-spacing:-2px;
+}
+
+.hero h1 span { color:#ff454f; }
+
+.hero p {
+  color:#d1d9e9;
+  font-size:16px;
+  line-height:1.9;
+  margin:25px 0 32px;
+  max-width:520px;
+}
+
+.hero-actions { display:flex; gap:14px; flex-wrap:wrap; }
+
+.section { padding:90px 0; }
+
+.section-heading {
+  text-align:center;
+  max-width:650px;
+  margin:0 auto 45px;
+}
+
+.section-heading .tag { margin-bottom:12px; }
+
+.section-heading h2 {
+  font-size:clamp(28px,4vw,42px);
+  color:var(--dark);
+  font-weight:900;
+}
+
+.section-heading p {
+  color:var(--muted);
+  line-height:1.8;
+  font-size:14px;
+  margin-top:15px;
+}
+
+.vehicles { background:var(--light); }
+
+.vehicle-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.vehicle-card {
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid #e8edf5;
+  transition:.3s;
+}
+
+.vehicle-card:hover {
+  transform:translateY(-7px);
+  box-shadow:0 15px 40px #102c6815;
+}
+
+.vehicle-card img {
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  background:#e9edf5;
+}
+
+.vehicle-info { padding:25px; }
+
+.vehicle-info small {
+  color:var(--red);
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.vehicle-info h3 {
+  margin:10px 0;
+  color:var(--blue);
+  font-size:21px;
+}
+
+.vehicle-info p {
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.8;
+  min-height:47px;
+}
+
+.vehicle-info a {
+  display:inline-block;
+  color:var(--red);
+  font-weight:800;
+  font-size:13px;
+  margin-top:20px;
+}
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:65px;
+}
+
+.about-image {
+  position:relative;
+}
+
+.about-image img {
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.about-content h2 {
+  font-size:40px;
+  color:var(--dark);
+  margin-bottom:20px;
+  line-height:1.2;
+}
+
+.about-content p {
+  color:var(--muted);
+  line-height:1.9;
+  font-size:14px;
+  margin-bottom:22px;
+}
+
+.features {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:17px;
+  margin:28px 0;
+}
+
+.feature {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:13px;
+  font-weight:700;
+}
+
+.feature-icon {
+  width:38px;
+  height:38px;
+  display:grid;
+  place-items:center;
+  background:#edf2ff;
+  color:var(--blue);
+  border-radius:8px;
+  font-size:18px;
+}
+
+.services { background:var(--light); }
+
+.service-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.service-card {
+  padding:30px 22px;
+  background:white;
+  border-radius:10px;
+  border:1px solid #edf0f5;
+  transition:.3s;
+}
+
+.service-card:hover {
+  border-color:var(--red);
+  transform:translateY(-5px);
+}
+
+.service-icon {
+  font-size:29px;
+  margin-bottom:20px;
+}
+
+.service-card h3 {
+  color:var(--blue);
+  font-size:16px;
+  margin-bottom:12px;
+}
+
+.service-card p {
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.8;
+}
+
+.cta {
+  background:linear-gradient(120deg,#102c68,#07152e);
+  color:white;
+  padding:65px 0;
+}
+
+.cta .container {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.cta h2 { font-size:32px; margin-bottom:12px; }
+.cta p { color:#c6d1e4; font-size:14px; line-height:1.8; }
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:35px;
+}
+
+.contact-info {
+  background:var(--blue);
+  color:white;
+  padding:35px;
+  border-radius:12px;
+}
+
+.contact-info h2 { font-size:27px; margin-bottom:20px; }
+
+.contact-info p {
+  color:#d5dff0;
+  font-size:13px;
+  line-height:1.8;
+}
+
+.contact-item {
+  margin-top:26px;
+  display:flex;
+  gap:15px;
+  align-items:flex-start;
+}
+
+.contact-item strong {
+  display:block;
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.contact-item span {
+  font-size:12px;
+  color:#d5dff0;
+  line-height:1.8;
+}
+
+.contact-form {
+  padding:35px;
+  border:1px solid #e8edf5;
+  border-radius:12px;
+}
+
+.contact-form h2 {
+  font-size:25px;
+  color:var(--dark);
+  margin-bottom:25px;
+}
+
+.form-group { margin-bottom:17px; }
+
+.form-group label {
+  display:block;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width:100%;
+  padding:14px;
+  border:1px solid #dfe5ee;
+  border-radius:6px;
+  font-family:inherit;
+  font-size:13px;
+  outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color:var(--blue); }
+
+.form-group textarea { resize:vertical; min-height:100px; }
+
+.contact-form button { width:100%; }
+
+.map-section { background:var(--light); }
+
+.map-frame {
+  width:100%;
+  height:360px;
+  border:0;
+  border-radius:12px;
+}
+
+footer {
+  background:#07152e;
+  color:white;
+  padding:55px 0 20px;
+}
+
+.footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:45px;
+  padding-bottom:40px;
+}
+
+footer h3 { margin-bottom:20px; font-size:17px; }
+footer p, footer a {
+  color:#b7c3d6;
+  font-size:12px;
+  line-height:2.2;
+}
+
+footer a:hover { color:white; }
+
+.footer-bottom {
+  border-top:1px solid #ffffff20;
+  padding-top:20px;
+  text-align:center;
+  color:#9aabc5;
+  font-size:11px;
+}
+
+.whatsapp {
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:150;
+  width:57px;
+  height:57px;
+  display:grid;
+  place-items:center;
+  background:#25d366;
+  color:white;
+  border-radius:50%;
+  font-size:26px;
+  box-shadow:0 5px 20px #0003;
+}
+
+@media(max-width:900px) {
+  .navlinks {
+    display:none;
+    position:absolute;
+    top:82px;
+    left:0;
+    width:100%;
+    padding:25px;
+    background:white;
+    flex-direction:column;
+    align-items:flex-start;
+    box-shadow:0 10px 20px #0001;
+  }
+
+  .navlinks.active { display:flex; }
+  .menu-toggle { display:block; }
+  .nav > .btn { display:none; }
+  .vehicle-grid { grid-template-columns:repeat(2,1fr); }
+  .service-grid { grid-template-columns:repeat(2,1fr); }
+  .about-grid { gap:35px; }
+}
+
+@media(max-width:600px) {
+  .topbar .container { justify-content:center; text-align:center; }
+  .hero { min-height:570px; }
+  .hero h1 { letter-spacing:-1px; }
+  .hero p { font-size:14px; }
+  .section { padding:65px 0; }
+  .vehicle-grid,
+  .service-grid,
+  .about-grid,
+  .contact-grid,
+  .footer-grid { grid-template-columns:1fr; }
+  .about-image img { height:300px; }
+  .about-content h2 { font-size:31px; }
+  .features { grid-template-columns:1fr; }
+  .contact-form, .contact-info { padding:25px; }
+  .cta h2 { font-size:26px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>📍 Lingasugur, Karnataka</span>
+    <span>📞 +91 90368 81788 | Mon–Sat: 9 AM–6 PM</span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">
+      <div class="logo-icon">B</div>
+      <div>
+        <h2>BAJAJ AUTO</h2>
+        <p>PURNA PUSHKALA MOTORS</p>
+      </div>
+    </a>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#home">Home</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="btn btn-red"
+       href="https://wa.me/919036881788">
+       Enquire Now ↗
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="tag">Your Local Bajaj Dealership</div>
+
+      <h1>
+        POWER YOUR<br>
+        JOURNEY WITH<br>
+        <span>BAJAJ.</span>
+      </h1>
+
+      <p>
+        Discover Bajaj commercial mobility solutions at
+        Purna Pushkala Motors, Lingasugur.
+        Get in touch with our showroom for vehicle information,
+        pricing and finance enquiries.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#vehicles" class="btn btn-red">
+          Explore Vehicles →
+        </a>
+
+        <a href="https://wa.me/919036881788"
+           class="btn btn-outline">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section vehicles" id="vehicles">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="tag">Explore Our Range</div>
+      <h2>Discover Bajaj Vehicles</h2>
+      <p>
+        Explore commercial mobility options and contact
+        our showroom to enquire about available models,
+        variants and pricing.
+      </p>
+    </div>
+
+    <div class="vehicle-grid">
+
+      <article class="vehicle-card">
+        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800"
+             alt="Motorcycle vehicle showcase">
+        <div class="vehicle-info">
+          <small>BAJAJ COMMERCIAL</small>
+          <h3>Bajaj RE</h3>
+          <p>Explore passenger mobility vehicle options.</p>
+          <a href="#contact">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800"
+             alt="Commercial vehicle">
+        <div class="vehicle-info">
+          <small>BAJAJ COMMERCIAL</small>
+          <h3>Bajaj Maxima</h3>
+          <p>Explore commercial cargo and transport solutions.</p>
+          <a href="#contact">Enquire Now →</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card">
+        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800"
+             alt="Electric mobility vehicle">
+        <div class="vehicle-info">
+          <small>ELECTRIC MOBILITY</small>
+          <h3>Bajaj Riki</h3>
+          <p>Ask us about Bajaj electric mobility options.</p>
+          <a href="#contact">Enquire Now →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container about-grid">
+
+    <div class="about-image">
+      <img
+       src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=1000"
+       alt="Two wheeler showroom inspiration">
+    </div>
+
+    <div class="about-content">
+      <div class="tag">About Our Dealership</div>
+      <h2>Welcome to Purna Pushkala Motors</h2>
+
+      <p>
+        Purna Pushkala Motors is listed as a Bajaj Auto
+        motor vehicle dealership in Lingasugur, Karnataka.
+        We aim to make vehicle enquiries convenient by
+        helping customers connect with the showroom.
+      </p>
+
+      <p>
+        Contact us to learn about vehicle options,
+        available variants, finance enquiries and
+        purchasing information.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <span class="feature-icon">✓</span>
+          Vehicle Enquiries
+        </div>
+        <div class="feature">
+          <span class="feature-icon">₹</span>
+          Finance Assistance
+        </div>
+        <div class="feature">
+          <span class="feature-icon">☎</span>
+          Customer Support
+        </div>
+        <div class="feature">
+          <span class="feature-icon">⌖</span>
+          Local Showroom
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-red">
+        Contact Our Showroom →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="tag">What We Offer</div>
+      <h2>Customer Assistance</h2>
+      <p>
+        Get in touch with our team for your vehicle-related
+        enquiries and showroom information.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🏍️</div>
+        <h3>Vehicle Enquiries</h3>
+        <p>Ask about Bajaj models, specifications and variants.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">💰</div>
+        <h3>Finance Enquiries</h3>
+        <p>Ask about available finance and EMI options.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>Price Information</h3>
+        <p>Contact us for current vehicle pricing and offers.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">📞</div>
+        <h3>Customer Support</h3>
+        <p>Connect with our showroom for assistance.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div>
+      <h2>Looking for Your Next Bajaj Vehicle?</h2>
+      <p>Talk to our showroom team about vehicle availability and pricing.</p>
+    </div>
+
+    <a href="https://wa.me/919036881788"
+       class="btn btn-red">
+       Get in Touch →
+    </a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-heading">
+      <div class="tag">Get in Touch</div>
+      <h2>Contact Our Showroom</h2>
+      <p>
+        Send us your enquiry and connect with
+        Purna Pushkala Motors.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>
+          We welcome your vehicle enquiries.
+          Contact our showroom using the details below.
+        </p>
+
+        <div class="contact-item">
+          <div>📍</div>
+          <div>
+            <strong>Showroom Address</strong>
+            <span>
+              No 2-12-94, Hubli–Vijayapur–Gulbarga Road,
+              Lingasugur, Karnataka 584122
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div>📞</div>
+          <div>
+            <strong>Phone Number</strong>
+            <span>+91 90368 81788</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div>🕒</div>
+          <div>
+            <strong>Business Hours</strong>
+            <span>Monday – Saturday<br>9:00 AM – 6:00 PM</span>
+          </div>
+        </div>
+
+        <a class="btn btn-red"
+          style="margin-top:30px"
+          href="https://www.google.com/maps/search/?api=1&query=Purna+Pushkala+Motors+Lingasugur">
+          Get Directions →
+        </a>
+      </div>
+
+      <form class="contact-form" id="enquiryForm">
+        <h2>Send an Enquiry</h2>
+
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input id="name" name="name"
+            placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Number</label>
+          <input id="phone" name="phone"
+            type="tel" pattern="[0-9]{10}"
+            maxlength="10" placeholder="10-digit mobile number"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="vehicle">Vehicle Interested In</label>
+          <select id="vehicle" name="vehicle" required>
+            <option value="">Select Vehicle</option>
+            <option>Bajaj RE</option>
+            <option>Bajaj Maxima</option>
+            <option>Bajaj Riki</option>
+            <option>Other Bajaj Vehicle</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"
+            placeholder="Tell us what you would like to know"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-red">
+          Submit Enquiry via WhatsApp →
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<section class="section map-section">
+  <div class="container">
+    <div class="section-heading">
+      <div class="tag">Visit Us</div>
+      <h2>Find Our Location</h2>
+      <p>Visit Purna Pushkala Motors in Lingasugur, Karnataka.</p>
+    </div>
+
+    <iframe
+      class="map-frame"
+      src="https://maps.google.com/maps?q=Purna%20Pushkala%20Motors%20Lingasugur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Purna Pushkala Motors location">
+    </iframe>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+      <div>
+        <h3>BAJAJ AUTO</h3>
+        <p>
+          PURNA PUSHKALA MOTORS<br>
+          Lingasugur, Karnataka.<br>
+          Your local destination for Bajaj vehicle enquiries.
+        </p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#vehicles">Vehicles</a></p>
+        <p><a href="#about">About Us</a></p>
+        <p><a href="#services">Services</a></p>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <p>+91 90368 81788</p>
+        <p>Monday – Saturday</p>
+        <p>9:00 AM – 6:00 PM</p>
+        <p>Lingasugur, Karnataka 584122</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> Purna Pushkala Motors.
+      All Rights Reserved.
+      <br><br>
+      Independent dealership website concept.
+      Bajaj is a registered trademark of its respective owner.
+    </div>
+
+  </div>
+</footer>
+
+<a class="whatsapp"
+ href="https://wa.me/919036881788"
+ target="_blank"
+ rel="noopener"
+ aria-label="Chat on WhatsApp">✆</a>
+
+<script>
+const menuToggle = document.getElementById('menuToggle');
+const navlinks = document.getElementById('navlinks');
+
+menuToggle.addEventListener('click', () => {
+  navlinks.classList.toggle('active');
+  menuToggle.textContent =
+    navlinks.classList.contains('active') ? '✕' : '☰';
+});
+
+document.querySelectorAll('.navlinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    navlinks.classList.remove('active');
+    menuToggle.textContent = '☰';
+  });
+});
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+document.getElementById('enquiryForm')
+.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const vehicle = document.getElementById('vehicle').value;
+  const message = document.getElementById('message').value.trim();
+
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert('Please enter a valid 10-digit mobile number.');
+    return;
+  }
+
+  const text =
+`Hello Purna Pushkala Motors!
+
+I would like to make a vehicle enquiry.
+
+Name: ${name}
+Mobile: ${phone}
+Vehicle: ${vehicle}
+Message: ${message || 'Please share more information.'}`;
+
+  const whatsappURL =
+    'https://wa.me/919036881788?text=' +
+    encodeURIComponent(text);
+
+  window.open(whatsappURL, '_blank');
+});
+</script>
+
+</body>
+</html>
